@@ -881,12 +881,19 @@ select.form-control {
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--color-border);
+  background: transparent !important;
+  /* background: rgba(255, 255, 255, 0.95); */
+  /* background: #232a3b;*/
+  backdrop-filter: blur(1px);
+  /* border-bottom: 1px solid var(--color-border); */
   z-index: 1000;
   transition: all var(--duration-normal) var(--ease-standard);
 }
+/* .header {
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+} */
 
 .nav {
   display: flex;
@@ -898,7 +905,8 @@ select.form-control {
 .nav__logo {
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-semibold);
-  color: var(--color-primary);
+  /* color: var(--color-primary); */
+  color: #fff;
   text-decoration: none;
 }
 
